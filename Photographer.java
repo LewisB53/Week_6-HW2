@@ -16,8 +16,8 @@ public class Photographer{
   }
 
 
-  public void addCamera(Printable food){
-    this.cameras.add(food);
+  public void addCamera(Printable camera){
+    this.cameras.add(camera);
   }
 
 

@@ -26,12 +26,18 @@ public class PhotographerTest{
     assertEquals(1, photographer.cameraCount());
   }
 
+
   @Test
   public void canGetCamDetails(){
     assertEquals("Nikon 34T, Noise reduction filter, Hi-resolution", digitalCamera.printDetails());
   }
 
-
+  @Test
+  public void canGetAllCamDetails(){
+    photographer.addCamera(digitalCamera);
+    photographer.addCamera(analogueCamera);
+     assertEquals(14, photographer.getAllCamDetails());
+  }
 
 
 
