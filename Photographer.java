@@ -21,9 +21,11 @@ public class Photographer{
   }
 
 
-  public int nutritionValue(){
-    return 4;
+  public String getAllCamDetails(){
+    String allDetails = "";
+    for (Printable camera : this.cameras)
+      allDetails += camera.printDetails();
+    System.out.println(allDetails);
+    return allDetails;
   }
-
-
 }

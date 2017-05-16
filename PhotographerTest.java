@@ -36,7 +36,7 @@ public class PhotographerTest{
   public void canGetAllCamDetails(){
     photographer.addCamera(digitalCamera);
     photographer.addCamera(analogueCamera);
-     assertEquals(14, photographer.getAllCamDetails());
+     assertEquals("Nikon 34T, Noise reduction filter, Hi-resolution Sony ILCE5100L, No noise reduciton, Lo-resolution", photographer.getAllCamDetails());
   }
 
 
